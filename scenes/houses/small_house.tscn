@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=4 uid="uid://bxh8v3a7k5v8a"]
+
+[ext_resource type="TileSet" uid="uid://d4gt718ka5rfe" path="res://Tilesets/house_tile_set.tres" id="1_xgc15"]
+
+[node name="SmallHouse" type="Node2D"]
+
+[node name="HouseTilemap" type="Node2D" parent="."]
+
+[node name="Floor" type="TileMapLayer" parent="HouseTilemap"]
+tile_map_data = PackedByteArray("AAAAAAAABAABAAEAAAAAAAEABAABAAEAAAAAAAIABAABAAEAAAABAAAABAABAAEAAAABAAEABAABAAEAAAABAAIABAABAAEAAAACAAAABAABAAEAAAACAAEABAABAAEAAAACAAIABAABAAEAAAA=")
+tile_set = ExtResource("1_xgc15")
+
+[node name="Walls" type="TileMapLayer" parent="HouseTilemap"]
+tile_map_data = PackedByteArray("AAD/////BAAAAAAAAAAAAP//BAADAAIAAAABAP//BAABAAAAAAACAP//BAADAAIAAAADAP//BAACAAAAAAD//wAABAAAAAEAAAADAAAABAACAAEAAAD//wEABAAAAAEAAAADAAEABAACAAEAAAD//wIABAAAAAEAAAADAAIABAACAAEAAAD//wMABAAAAAIAAAAAAAMABAADAAIAAAACAAMABAADAAIAAAADAAMABAACAAIAAAABAAMABgAAAAAAAQA=")
+tile_set = ExtResource("1_xgc15")
+
+[node name="Furniture" type="TileMapLayer" parent="HouseTilemap"]
+tile_map_data = PackedByteArray("AAABAP//BQADAAIAAAABAAAABQACAAEAAAACAAEABQAFAAUAAGAAAAAABQAGAAIAAAACAAIABQADAAAAAAAAAAIABQADAAAAAAA=")
+tile_set = ExtResource("1_xgc15")

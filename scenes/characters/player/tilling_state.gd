@@ -5,20 +5,20 @@ extends NodeState
 @export var animated_sprite_2d: AnimatedSprite2D
 
 
-func _on_process(_delta: float) -> void:
+func on_process(_delta: float) -> void:
 	pass
 
 
-func _on_physics_process(_delta: float) -> void:
+func on_physics_process(_delta: float) -> void:
 	pass
 
 
-func _on_next_transitions() -> void:
+func on_next_transitions() -> void:
 	if !animated_sprite_2d.is_playing():
 		transition.emit("Idle")
 
 
-func _on_enter() -> void:
+func on_enter() -> void:
 	if player.player_direction == Vector2.UP:
 		animated_sprite_2d.play("tilling_back")
 	elif player.player_direction == Vector2.DOWN:
@@ -31,5 +31,5 @@ func _on_enter() -> void:
 		animated_sprite_2d.play("tilling_front")
 
 
-func _on_exit() -> void:
+func on_exit() -> void:
 	animated_sprite_2d.stop()
