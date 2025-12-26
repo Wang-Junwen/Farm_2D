@@ -70,6 +70,8 @@ hit={
 2d_physics/layer_1="玩家"
 2d_physics/layer_2="墙体"
 2d_physics/layer_3="交互层"
+2d_physics/layer_4="工具"
+2d_physics/layer_5="物体"
 
 [rendering]
 
