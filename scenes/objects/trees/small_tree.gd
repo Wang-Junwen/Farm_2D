@@ -16,7 +16,8 @@ func _on_hurt(hit_damage: int) -> void:
 
 
 func _on_max_damage_reached() -> void:
-	call_deferred("add_log_scene")
+	await get_tree().create_timer(1).timeout
+	add_log_scene()
 	print("max damage reached")
 	queue_free()
 
